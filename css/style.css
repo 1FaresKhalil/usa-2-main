@@ -1,0 +1,312 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "nimbus_roman_d_otregular";
+  src: url("../assets/nimbus-roman-d-ot_32732-webfont.woff2") format("woff2"),
+    url("../assets/nimbus-roman-d-ot_32732-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nimbus_roman_d_otbold";
+  src: url("../assets/nimbus-roman-d-ot-bold_32729-webfont.woff2")
+      format("woff2"),
+    url("../assets/nimbus-roman-d-ot-bold_32729-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "vanibold";
+  src: url("../assets/vanib-webfont.woff2") format("woff2"),
+    url("../assets/vanib-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* start header */
+.header {
+  height: 100vh;
+}
+.navbar ul li a {
+  text-transform: uppercase;
+}
+.navbar {
+  background-color: #ccd4e0 !important;
+}
+.navbar li .active {
+  background-color: #00469e;
+  color: #fff !important;
+}
+.navbar li a {
+  padding: 0.8rem 0.8rem !important;
+}
+.header-content {
+  height: 82vh;
+  background-image: url(../assets/Group1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-heading {
+  font-family: "nimbus_roman_d_otregular";
+  letter-spacing: 5px;
+  line-height: 82px;
+  color: #fdf9f7;
+  text-transform: uppercase;
+  font-size: 78px;
+  margin-left: auto;
+  transform: translateX(-250px);
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+/* end header */
+
+/* start about */
+.about {
+}
+.about-heading h2 {
+  font-family: "nimbus_roman_d_otregular";
+  color: #cc0033;
+  padding-bottom: 10px;
+  position: relative;
+}
+.about-heading h2:after {
+  content: "";
+  border-bottom: 3px solid #c94265;
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  bottom: 0;
+}
+.about .main-paragraph {
+  font-weight: 500 !important;
+}
+.about p {
+  font-family: "Open Sans", sans-serif;
+}
+/* end about */
+/* Start Company */
+#company {
+  padding-top: 50px;
+  color: white;
+  background-image: url(../assets/Layer_212x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 120px;
+}
+#company span {
+  font-size: 60px;
+  font-family: "vanibold";
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+#company h3 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+/* End Company */
+/* Start Team */
+#team {
+  margin-top: 120px;
+  padding: 15px;
+}
+
+#team .team-content .team-icon img {
+  width: 94px;
+  position: relative;
+}
+#team .team-content p {
+  font-size: 14px;
+  color: #3b3b3b;
+  padding-bottom: 25px;
+}
+#team .team-content {
+  border: 3px solid #70707065;
+  padding: 25px;
+}
+#team .team-content h1 {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  font-weight: normal;
+}
+/* End Team */
+
+.btn-bordered {
+  position: relative;
+  padding: 10px;
+  border: 1px solid;
+  margin-top: 19px;
+}
+
+.btn-bordered::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  left: 50%;
+  top: -20px;
+  transform: translateX(-50%);
+  height: 20px;
+  width: 1px;
+}
+/* end */
+/* Start Contact */
+#contact {
+  margin-top: 120px;
+  background-image: url(../assets/Layer_212x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact p {
+  padding-bottom: 100px;
+}
+#contact .contact-form input,
+textarea {
+  background: none;
+  border: none;
+}
+#contact .contact-form input:focus,
+textarea {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+#contact .contact-form input::placeholder {
+  color: white !important;
+}
+#contact .contact-form .form-input {
+  border-bottom: 2px solid white;
+}
+.form-control {
+  color: white !important;
+}
+textarea.form-control {
+  background: none;
+  color: white !important;
+}
+textarea.form-control:focus {
+  background: none;
+  box-shadow: none;
+}
+textarea.form-control::placeholder {
+  color: white;
+}
+form .link-button a {
+  padding: 15px 50px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+select {
+  color: white;
+  border-bottom: 2px solid white;
+}
+select option {
+  color: black;
+}
+#contact .form-select {
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.form-select {
+  background-color: transparent;
+  
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+/* End Contact */
+/* start gallery */
+.gallery-heading h2 {
+  font-family: "nimbus_roman_d_otbold";
+  color: #cc0033;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+.gallery p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.gallery .main-paragraph {
+  font-weight: 500 !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery .column img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+  .gallery .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gallery .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* end gallery */
+
+/* Start Footer */
+#footer {
+  padding-top: 50px;
+  background-color: #191919;
+}
+#footer .footer-links a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+}
+#footer .last {
+  padding-bottom: 10px;
+}
+#footer .last span {
+  color: white;
+}
+#footer .last img {
+  width: 15px;
+  margin-right: 10px;
+}
+
+#copyright .social-icons a{
+  width: 40px;
+  margin-right: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+/* End Footer */
